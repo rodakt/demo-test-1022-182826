@@ -17,3 +17,16 @@ OK  praca/iter01/zad2/rozwiazanie_st6_23.json stopień=6
 OK  praca/iter01/zad2/rozwiazanie_st6_32.json stopień=6 
 Zaakceptowane: 4, odrzucone: 0, najlepszy stopień: 6
 [18:33:06] najlepszy zweryfikowany stopień: 6
+[18:33:19] == iteracja 02: planowanie
+[18:34:48] agent iter02_planista zakończony (kod 0, koszt 0.4823778 USD)
+[18:34:48] == iteracja 02: 3 wykonawców po 12 min
+[18:34:48] start iter02_zad1: Niezależna weryfikacja braku automorfizmu stopnia 4 (multistopień (2,2)) nad Q
+[18:34:48] start iter02_zad2: Spisanie i krytyczna recenzja pełnego dowodu: każdy automorfizm ma stopień >= 6
+[18:34:48] start iter02_zad3: Czytelne rozwiązanie stopnia 6 do raportu + niezależna kontrola wykluczenia 1 czynnika
+[18:36:33] agent iter02_zad1 zakończony (kod 0, koszt 0.4153952 USD)
+[18:36:54] agent iter02_zad2 zakończony (kod 0, koszt 0.5933478 USD)
+[18:37:02] agent iter02_zad3 zakończony (kod 0, koszt 0.540514 USD)
+[18:37:02] == iteracja 02: weryfikacja
+OK  praca/iter02/zad3/rozwiazanie_st6_ladne.json stopień=6 
+Zaakceptowane: 5, odrzucone: 0, najlepszy stopień: 6
+[18:37:02] najlepszy zweryfikowany stopień: 6

@@ -1,0 +1,7 @@
+{"status":"wynik_negatywny",
+ "podsumowanie":"Niezależnie (pełny ideał wszystkich współczynników, baza Gröbnera i eliminacja w Sage) potwierdzono, że nie istnieje automorfizm postaci A∘u_g∘t_f∘B z deg f = deg g = 2 nad Q realizujący bijekcję z zadanie.json. Wielomian eliminacyjny dla niezmiennika s=a1^3*g2 rozkłada się na czynnik kwadratowy (ciało Q(√94)) i kubiczny, bez pierwiastków wymiernych. Test kontrolny: nad ciałami liczbowymi zbudowano jawne F stopnia 4 spełniające F(p_i)=q_i ze stałym niezerowym jakobianem. Wynik zgodny z iter01/zad1.",
+ "najlepszy_stopien":null,
+ "twierdzenia":[
+  {"tresc":"Brak automorfizmu postaci A∘(x+g(y),y)∘(x,y+f(x))∘B, A,B afiniczne nad Q, deg f = deg g = 2, z F(p_i)=q_i.","etykieta":"OBLICZENIOWE","uzasadnienie":"Normalizacje wymierne f=x^2, g=g2*y^2, a0=e0=0 (uzasadnione w notatki.md); warunki niezerowości przez zmienne pomocnicze, bez dzielenia; eliminacja daje wielomian stopnia 5 od s=a1^3*g2 bez pierwiastków wymiernych.","pliki":["skrypty/gb22.sage","tmp/gb22.out"]},
+  {"tresc":"Nad ciałami liczbowymi (stopnia 3 i 6, m.in. zawierającymi √94) takie automorfizmy stopnia 4 istnieją; sprawdzono symbolicznie F(p_i)=q_i, deg F=4, stały jakobian.","etykieta":"OBLICZENIOWE","uzasadnienie":"Test kontrolny metody: dodano g2=1, policzono punkty nad ciałami z wielomianów minimalnych a1, zbudowano F jawnie.","pliki":["skrypty/kontrola.sage","tmp/kontrola.out"]}
+ ]}

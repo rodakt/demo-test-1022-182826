@@ -1,0 +1,7 @@
+{"status":"rozwiazanie",
+"podsumowanie":"Znaleziono i zweryfikowano lokalnie (ok, stopień 6, 32 wyrazy) czytelniejsze rozwiązanie stopnia 6: F = A∘(x−5/96 y³−1/24 y², y)∘(x, y+8/3 x²)∘B z B(x,y)=(y, −3x+y−8/3). Przeszukano kierunki a, e o całkowitych wpisach |.|≤3 dla obu multistopni; tylko 6 kombinacji daje rozwiązanie, F zależy wyłącznie od kierunków. Niezależnie potwierdzono, że jedyne pary funkcjonałów afinicznych l(p_i)=l'(q_i) są stałe.",
+"najlepszy_stopien":6,
+"twierdzenia":[
+{"tresc":"Plik rozwiazanie_st6_ladne.json definiuje automorfizm stopnia 6 z F(p_i)=q_i (multistopień (2,3), f=8/3 x², g=−5/96 y³−1/24 y²).","etykieta":"OBLICZENIOWE","uzasadnienie":"Lokalny weryfikator: ok, stopień 6; symbolicznie F∘G=id. Etykietę ZWERYFIKOWANE nadaje zarządca.","pliki":["skrypty/zapisz.py","rozwiazanie_st6_ladne.json"]},
+{"tresc":"Wśród kierunków a, e o całkowitych współrzędnych |.|≤3 (prymitywnych) postać A∘T_x(g)∘T_y(f)∘B o multistopniu (3,2) lub (2,3) jest rozwiązywalna z odwracalnymi A, B tylko dla 6 par (a,e); przy ustalonych (a,e) F nie zależy od parametrów swobodnych.","etykieta":"OBLICZENIOWE","uzasadnienie":"Dokładne rozwiązanie układów liniowych sympy; niezależność F od trywialnej swobody b→b+ka+m, f→f−kx−m jest natychmiastowa.","pliki":["skrypty/szukaj_ladne.py"]},
+{"tresc":"Jedyne pary afinicznych funkcjonałów l, l' z l(p_i)=l'(q_i) dla i=1..5 to stałe l=l'.","etykieta":"OBLICZENIOWE","uzasadnienie":"Macierz układu 5×6 ma rząd 5, jądro rozpięte przez (u0,v0)=(1,1).","pliki":["skrypty/brak_funkcjonalu_niezal.py"]}]}

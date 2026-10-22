@@ -1,0 +1,9 @@
+{"status": "dowod",
+ "podsumowanie": "Spisano i krytycznie sprawdzono pełny łańcuch dowodu, że każdy automorfizm wielomianowy Q^2 realizujący bijekcję ma deg F >= 6. Nie znaleziono luki merytorycznej; doprecyzowano wchłanianie części afinicznych (potrzebna diagonalność przy przesuwaniu przez σ) oraz uprawnienie normalizacji a, e. Wynik obliczeniowy dla (2,2) powtórzono skryptem kontrolnym z jawnym pokryciem kart α2=0, ε2=0 — brak punktów wymiernych. Dowód zależy od cytowanego twierdzenia Jung–van der Kulk i dwóch faktów OBLICZENIOWYCH.",
+ "najlepszy_stopien": null,
+ "twierdzenia": [
+  {"tresc": "Każdy nieafiniczny automorfizm Q^2 ma postać A∘σ t_{f_k} σ … σ t_{f_1}∘L z A,L afinicznymi nad Q, deg f_i>=2, oraz deg F = ∏ deg f_i (stopień całkowity).", "etykieta": "UDOWODNIONE", "uzasadnienie": "Z cytowanego Jung–van der Kulk (dowolne ciało), rozkładu Bruhata nad Q i indukcji po formach wiodących; notatki.md Kroki 0–2.", "pliki": []},
+  {"tresc": "Słowa z k=0 lub k=1 czynnikami trójkątnymi nie realizują bijekcji.", "etykieta": "OBLICZENIOWE", "uzasadnienie": "Macierz [p_x,p_y,1,-q_x,-q_y,-1] ma rząd 5, jądro tylko stałe; notatki.md Krok 3.", "pliki": ["skrypty/kontrola.sage"]},
+  {"tresc": "Brak automorfizmu postaci A∘u_g∘t_f∘L nad Q z deg f, deg g <= 2 realizującego bijekcję.", "etykieta": "OBLICZENIOWE", "uzasadnienie": "Warunek konieczny det M1 = det M2 = 0 w (α,ε); nasycenie, minimalne składowe pierwsze, jawne sprawdzenie wszystkich kart: brak punktów wymiernych z α≠0, ε≠0. Potwierdza iter01/zad1.", "pliki": ["skrypty/kontrola.sage"]},
+  {"tresc": "Każdy automorfizm wielomianowy Q^2 z F(p_i)=q_i ma deg F >= 6.", "etykieta": "UDOWODNIONE", "uzasadnienie": "Modulo cytowane Jung–van der Kulk i dwa powyższe fakty OBLICZENIOWE; notatki.md Kroki 0–6 i lista kontrolna §R.", "pliki": ["skrypty/kontrola.sage"]}
+ ]}

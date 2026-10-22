@@ -1,0 +1,51 @@
+{
+ "autor": "iter02/zad3",
+ "opis": "A∘(x+g(y),y)∘(x,y+f(x))∘B, multistopien (2,3), najczytelniejsze z przeszukania kierunkow |.|<=3",
+ "postac": "slowo",
+ "czynniki": [
+  {
+   "typ": "afiniczne",
+   "A": [
+    [
+     "0",
+     "1"
+    ],
+    [
+     "-3",
+     "1"
+    ]
+   ],
+   "t": [
+    "0",
+    "-8/3"
+   ]
+  },
+  {
+   "typ": "trojkatne",
+   "zmienia": "y",
+   "f": "8*x**2/3"
+  },
+  {
+   "typ": "trojkatne",
+   "zmienia": "x",
+   "f": "-5*y**3/96 - y**2/24"
+  },
+  {
+   "typ": "afiniczne",
+   "A": [
+    [
+     "-1",
+     "-5/24"
+    ],
+    [
+     "-3",
+     "-13/8"
+    ]
+   ],
+   "t": [
+    "-1/6",
+    "-1/2"
+   ]
+  }
+ ]
+}

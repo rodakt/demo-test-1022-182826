@@ -2,3 +2,7 @@ iter01_planista	planista	01	1792686538	1792686655	0	0.4885807999999999	5	planowa
 iter01_zad1	wykonawca	01	1792686656	1792686785	0	0.48879720000000004	8	Multistopień (2,2): konstrukcja stopnia 4 albo dowód jej braku 
 iter01_zad2	wykonawca	01	1792686656	1792686785	0	0.36988960000000004	8	Konstrukcje stopnia 6, 8, 9 (multistopnie (2,3),(3,2),(2,4),(4,2),(3,3)) 
 iter01_zad3	wykonawca	01	1792686656	1792686785	0	0.4756666	5	Dowód: stopień >= 4 i nie jest liczbą pierwszą; lemat o postaci normalnej 
+iter02_planista	planista	02	1792686799	1792686888	0	0.4823778	5	planowanie 
+iter02_zad1	wykonawca	02	1792686888	1792686993	0	0.4153952	6	Niezależna weryfikacja braku automorfizmu stopnia 4 (multistopień (2,2)) nad Q 
+iter02_zad2	wykonawca	02	1792686888	1792687014	0	0.5933478	7	Spisanie i krytyczna recenzja pełnego dowodu: każdy automorfizm ma stopień >= 6 
+iter02_zad3	wykonawca	02	1792686888	1792687022	0	0.540514	11	Czytelne rozwiązanie stopnia 6 do raportu + niezależna kontrola wykluczenia 1 czynnika 

@@ -2,10 +2,30 @@
  "m": 5,
  "ograniczenie_znane": 16,
  "najlepszy_stopien": 6,
- "najlepszy_plik": "praca/iter01/zad1/rozwiazanie_st6.json",
- "liczba_zaakceptowanych": 4,
+ "najlepszy_plik": "praca/iter02/zad3/rozwiazanie_st6_ladne.json",
+ "liczba_zaakceptowanych": 5,
  "liczba_odrzuconych": 0,
  "rozwiazania": [
+  {
+   "plik": "praca/iter02/zad3/rozwiazanie_st6_ladne.json",
+   "ok": true,
+   "stopien": 6,
+   "bledy": [],
+   "autor": "iter02/zad3",
+   "opis": "A∘(x+g(y),y)∘(x,y+f(x))∘B, multistopien (2,3), najczytelniejsze z przeszukania kierunkow |.|<=3",
+   "stopnie_czynnikow": [
+    2,
+    3
+   ],
+   "F": [
+    "-45*x**3/32 + 15*x**2*y**2/4 + 45*x**2*y/32 - 27*x**2/8 - 10*x*y**4/3 - 5*x*y**3/2 + 177*x*y**2/32 + 9*x*y/4 - 49*x/24 + 80*y**6/81 + 10*y**5/9 - 9*y**4/4 - 187*y**3/96 + 311*y**2/216 - 23*y/72 - 49/162",
+    "-135*x**3/32 + 45*x**2*y**2/4 + 135*x**2*y/32 - 81*x**2/8 - 10*x*y**4 - 15*x*y**3/2 + 531*x*y**2/32 + 27*x*y/4 - 25*x/8 + 80*y**6/27 + 10*y**5/3 - 27*y**4/4 - 187*y**3/32 + 119*y**2/72 - 47*y/24 + 95/54"
+   ],
+   "liczba_wyrazow": 32,
+   "czas_weryfikacji_s": 0.05,
+   "sha256": "372dd81072cfc380efd9491d41a50bf6468c754552479be7b1c708bde8d4ce2c",
+   "zauwazono": "18:37:02"
+  },
   {
    "plik": "praca/iter01/zad1/rozwiazanie_st6.json",
    "ok": true,
