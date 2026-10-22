@@ -1,0 +1,9 @@
+{"status":"rozwiazanie",
+ "podsumowanie":"Przypadek multistopnia (2,2) (stopień 4) wykluczono obliczeniowo: warunki sprowadzają się do dwóch wyznaczników 5×5, których wspólne zera nie mają współrzędnych wymiernych. Znaleziono natomiast odwzorowanie stopnia 6 (multistopień (3,2)), które lokalny weryfikator przyjął (rozwiazanie_st6.json). Potwierdzono też, że postać afiniczne∘trójkątne∘afiniczne nie działa. Przy standardowej teorii multistopnia daje to hipotezę, że 6 jest minimalnym stopniem; trzeba ją jeszcze formalnie spisać.",
+ "najlepszy_stopien":6,
+ "twierdzenia":[
+  {"tresc":"Automorfizm stopnia 6: A∘(x+32y^2,y)∘(x,y+f(x))∘B, deg f=3, spełnia F(p_i)=q_i.","etykieta":"OBLICZENIOWE","uzasadnienie":"Lokalny weryfikator: ok, stopień 6; etykietę ZWERYFIKOWANE nada weryfikator zarządcy.","pliki":["rozwiazanie_st6.json","skrypty/st6.sage"]},
+  {"tresc":"Nie istnieje automorfizm postaci A∘(x+g(y),y)∘(x,y+f(x))∘B (A,B afiniczne nad Q, deg f ≤ 2, deg g ≤ 2) spełniający warunki zadania.","etykieta":"OBLICZENIOWE","uzasadnienie":"det M1 = det M2 = 0 po nasyceniu (a≠0, e≠0) wymaga wymiernego pierwiastka 9t^3+29t^2+39t+3 albo t^2-38t-15, a takiego nie ma.","pliki":["skrypty/st4.sage","tmp/st4.out"]},
+  {"tresc":"Żadne odwzorowanie postaci afiniczne∘trójkątne∘afiniczne (dowolnego stopnia) ani afiniczne nie spełnia warunków zadania.","etykieta":"OBLICZENIOWE","uzasadnienie":"Warunek konieczny c(q_i)=a(p_i) ma tylko rozwiązania stałe.","pliki":["skrypty/jeden_trojkatny.sage"]},
+  {"tresc":"Minimalny stopień automorfizmu nad Q realizującego tę bijekcję wynosi 6.","etykieta":"HIPOTEZA","uzasadnienie":"Wynika z dwóch powyższych wyników negatywnych i teorii multistopnia (Jung–van der Kulk, Friedland–Milnor), o ile poprawna jest redukcja słów z dwoma czynnikami trójkątnymi do postaci A∘(x+g(y),y)∘(x,y+f(x))∘B; tego dowodu nie spisano.","pliki":[]}
+ ]}

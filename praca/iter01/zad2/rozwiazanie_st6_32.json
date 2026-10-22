@@ -1,0 +1,51 @@
+{
+ "autor": "iter01/zad2",
+ "opis": "A∘(x+g(y),y)∘(x,y+f(x))∘B, multistopien (3,2)",
+ "postac": "slowo",
+ "czynniki": [
+  {
+   "typ": "afiniczne",
+   "A": [
+    [
+     "1",
+     "-3"
+    ],
+    [
+     "5/24",
+     "-13/8"
+    ]
+   ],
+   "t": [
+    "0",
+    "0"
+   ]
+  },
+  {
+   "typ": "trojkatne",
+   "zmienia": "y",
+   "f": "-5/96*x**3 + 1/24*x**2 - 1/6"
+  },
+  {
+   "typ": "trojkatne",
+   "zmienia": "x",
+   "f": "8/3*y**2 - 8/3"
+  },
+  {
+   "typ": "afiniczne",
+   "A": [
+    [
+     "0",
+     "1"
+    ],
+    [
+     "1/3",
+     "1/3"
+    ]
+   ],
+   "t": [
+    "0",
+    "0"
+   ]
+  }
+ ]
+}

@@ -2,3 +2,18 @@
 OK  praca/iter00/baza/rozwiazanie_bazowe.json stopień=16 
 Zaakceptowane: 1, odrzucone: 0, najlepszy stopień: 16
 [18:28:48] najlepszy zweryfikowany stopień: 16
+[18:28:58] == iteracja 01: planowanie
+[18:30:55] agent iter01_planista zakończony (kod 0, koszt 0.4885807999999999 USD)
+[18:30:55] == iteracja 01: 3 wykonawców po 12 min
+[18:30:56] start iter01_zad1: Multistopień (2,2): konstrukcja stopnia 4 albo dowód jej braku
+[18:30:56] start iter01_zad2: Konstrukcje stopnia 6, 8, 9 (multistopnie (2,3),(3,2),(2,4),(4,2),(3,3))
+[18:30:56] start iter01_zad3: Dowód: stopień >= 4 i nie jest liczbą pierwszą; lemat o postaci normalnej
+[18:33:05] agent iter01_zad1 zakończony (kod 0, koszt 0.48879720000000004 USD)
+[18:33:05] agent iter01_zad2 zakończony (kod 0, koszt 0.36988960000000004 USD)
+[18:33:05] agent iter01_zad3 zakończony (kod 0, koszt 0.4756666 USD)
+[18:33:05] == iteracja 01: weryfikacja
+OK  praca/iter01/zad1/rozwiazanie_st6.json stopień=6 
+OK  praca/iter01/zad2/rozwiazanie_st6_23.json stopień=6 
+OK  praca/iter01/zad2/rozwiazanie_st6_32.json stopień=6 
+Zaakceptowane: 4, odrzucone: 0, najlepszy stopień: 6
+[18:33:06] najlepszy zweryfikowany stopień: 6

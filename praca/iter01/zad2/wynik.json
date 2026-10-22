@@ -1,0 +1,7 @@
+{"status":"rozwiazanie",
+ "podsumowanie":"Znaleziono dwa automorfizmy stopnia 6 postaci A∘(x+g(y),y)∘(x,y+f(x))∘B o multistopniach (2,3) i (3,2), przyjęte przez lokalny weryfikator (stopień 6). Metoda: normalizacja a=x+s·y, e=x+t·y, przeszukanie małych wymiernych s,t, przy ustalonych s,t układy liniowe nad Q. Ograniczeń dolnych nie badano.",
+ "najlepszy_stopien":6,
+ "twierdzenia":[
+  {"tresc":"Istnieje automorfizm stopnia 6 (multistopień (2,3)) realizujący zadaną bijekcję: rozwiazanie_st6_23.json.","etykieta":"OBLICZENIOWE","uzasadnienie":"Przyjęty przez lokalny weryfikator (stopien 6); etykietę ZWERYFIKOWANE nada weryfikator zarządcy.","pliki":["skrypty/szukaj.sage","rozwiazanie_st6_23.json"]},
+  {"tresc":"Istnieje automorfizm stopnia 6 (multistopień (3,2)): rozwiazanie_st6_32.json.","etykieta":"OBLICZENIOWE","uzasadnienie":"Przyjęty przez lokalny weryfikator (stopien 6).","pliki":["skrypty/szukaj.sage","rozwiazanie_st6_32.json"]}
+ ]}

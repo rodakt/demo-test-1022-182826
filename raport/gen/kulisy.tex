@@ -1,3 +1,10 @@
 \section{Kulisy eksperymentu}
 Raport powstał bez udziału człowieka w trakcie pracy. Skrypt-zarządca pilnował czasu i w każdej iteracji uruchamiał: agenta-planistę (wybór kierunków), kilku niezależnych agentów-wykonawców (każdy w osobnym katalogu, z twardym limitem czasu), niezależny weryfikator (program przygotowany przed startem, którego agenci nie mogli zmienić) oraz agenta-redaktora tekstu. Po każdej iteracji raport był składany i publikowany.
 
+\begin{center}\small\begin{longtable}{rlp{6.2cm}rlr}\toprule Iter. & Rola & Zadanie & Min. & Koniec & Koszt [USD]\\\midrule\endhead
+01 & planista & planowanie  & 1.9 & zakończył & 0.49\\
+01 & wykonawca & Multistopień (2,2): konstrukcja stopnia 4 albo dowód jej braku  & 2.1 & zakończył & 0.49\\
+01 & wykonawca & Konstrukcje stopnia 6, 8, 9 (multistopnie (2,3),(3,2),(2,4),(4,2),(3,3))  & 2.1 & zakończył & 0.37\\
+01 & wykonawca & Dowód: stopień >= 4 i nie jest liczbą pierwszą; lemat o postaci normalnej  & 2.1 & zakończył & 0.48\\
+\bottomrule\end{longtable}\end{center}
+Łączny koszt obliczeń modelu (według raportów narzędzia): 1.82 USD. Skrót SHA-256 weryfikatora: \texttt{\hashWeryfikatora}.

@@ -1,0 +1,51 @@
+{
+ "autor": "iter01/zad1",
+ "opis": "A o (x+g(y),y) o (x,y+f(x)) o B, multistopien (3,2), deg 6",
+ "postac": "slowo",
+ "czynniki": [
+  {
+   "typ": "afiniczne",
+   "A": [
+    [
+     "12",
+     "-36"
+    ],
+    [
+     "5/24",
+     "-13/8"
+    ]
+   ],
+   "t": [
+    "0",
+    "-1/6"
+   ]
+  },
+  {
+   "typ": "trojkatne",
+   "zmienia": "y",
+   "f": "-5/165888*x**3 + 1/3456*x**2"
+  },
+  {
+   "typ": "trojkatne",
+   "zmienia": "x",
+   "f": "32*y**2"
+  },
+  {
+   "typ": "afiniczne",
+   "A": [
+    [
+     "0",
+     "1"
+    ],
+    [
+     "1/36",
+     "1/3"
+    ]
+   ],
+   "t": [
+    "0",
+    "-8/9"
+   ]
+  }
+ ]
+}
