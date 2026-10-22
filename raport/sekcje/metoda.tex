@@ -1,2 +1,80 @@
 \section{Metoda}
-Opis metody pojawi się po pierwszej iteracji.
+
+\subsection{Oznaczenia}
+Złożenia czytamy od prawej (prawy czynnik działa pierwszy). Niech
+\[
+t_f(x,y)=(x,\,y+f(x)),\qquad u_g(x,y)=(x+g(y),\,y),\qquad \sigma(x,y)=(y,x),
+\]
+gdzie $f,g\in\Q[t]$. Przez $\mathrm{Aff}$ oznaczamy grupę odwracalnych odwzorowań afinicznych
+nad $\Q$, przez $J$ grupę odwzorowań trójkątnych $(\alpha x+c,\ \beta y+h(x))$, $\alpha\beta\neq0$,
+$h\in\Q[x]$, a $B=\mathrm{Aff}\cap J$. Zauważmy, że $\sigma t_g\sigma=u_g$.
+
+\subsection{Struktura grupy automorfizmów}
+Podstawą jest klasyczne twierdzenie, którego \emph{nie dowodzimy}, lecz cytujemy.
+
+\begin{twierdzenie}[Jung 1942, van der Kulk 1953; cytowane]\label{tw:jvdk}
+Dla dowolnego ciała $k$ grupa $\Aut(k^2)$ jest iloczynem amalgamowanym
+$\mathrm{Aff}*_B J$. W szczególności każdy nieafiniczny automorfizm $F$ ma słowo zredukowane
+$F=L_kT_k L_{k-1}\cdots T_1L_0$ z $T_i\in J\setminus B$, $L_i\in\mathrm{Aff}$,
+$L_1,\dots,L_{k-1}\notin B$, a długość $k$ jest niezmiennikiem $F$.
+\end{twierdzenie}
+
+\begin{lemat}[postać standardowa; UDOWODNIONE, iter01/zad3 i iter02/zad2]\label{lem:postac}
+Każdy nieafiniczny $F\in\Aut(\Q^2)$ da się zapisać jako
+\[
+F=A\circ\sigma t_{f_k}\sigma t_{f_{k-1}}\cdots\sigma t_{f_1}\circ L,\qquad A,L\in\mathrm{Aff},\ f_i\in\Q[x],\ \deg f_i\ge2,
+\]
+i wtedy $\deg F=\prod_{i=1}^k\deg f_i$.
+\end{lemat}
+\begin{proof}[Szkic]
+Element $J\setminus B$ ma postać $d\circ t_h$ z $d$ diagonalno-afinicznym i $\deg h\ge2$.
+Rozkład Bruhata $\mathrm{Aff}=B\cup B\sigma B$ (używa tylko działań ciała, więc działa nad $\Q$)
+pozwala zapisać $L_i=b_i\sigma b_i'$; bloki $b_i'T_ib_{i-1}$ leżą w $J\setminus B$, a ich części
+diagonalne przesuwamy w lewo przez $\sigma$, bo $\sigma d\sigma\in B$ dla diagonalnego $d$
+(dla dowolnego elementu $B$ to nie zachodzi -- doprecyzowanie z recenzji iter02/zad2).
+Dla stopnia: jeśli $G_{j-1}=(P,R)$ z $\deg P=D_{j-1}$, $\deg R\le D_{j-1}$, to
+$G_j=\sigma t_{f_j}G_{j-1}=(R+f_j(P),P)$, a forma wiodąca $f_j(P)$ ma stopień
+$\deg f_j\cdot D_{j-1}>D_{j-1}\ge\deg R$, więc nie może się skrócić. Indukcja daje
+$\deg F=\prod\deg f_i$; złożenie z afinicznym $A$ stopnia nie zmienia.
+\end{proof}
+
+\subsection{Warunki interpolacyjne dla słów długości 2}
+Dla $k=2$ mamy $F=A\circ u_g\circ t_f\circ L$. Piszemy $L(p)=(a(p),b(p))$,
+$A^{-1}(q)=(c(q),e(q))$, gdzie $(a,b)$ i $(c,e)$ są parami liniowo niezależnych funkcjonałów
+afinicznych. Ponieważ $u_gt_f(a,b)=(a+g(b+f(a)),\,b+f(a))$, warunki $F(p_i)=q_i$ są
+\emph{równoważne} układowi
+\begin{equation}\label{eq:warunki}
+e(q_i)-b(p_i)=f\bigl(a(p_i)\bigr),\qquad c(q_i)-a(p_i)=g\bigl(e(q_i)\bigr),\qquad i=1,\dots,5.
+\end{equation}
+Przy \emph{ustalonych} funkcjonałach $a$, $e$ układ \eqref{eq:warunki} jest liniowy w
+pozostałych niewiadomych (współczynniki $b$, $c$, $f$, $g$). Wyrazy stałe $a$, $e$ i wyrazy liniowe
+$f,g$ można wchłonąć w $b$, $c$ (normalizacje opisane w notatkach iter02/zad1 i iter02/zad2), więc
+bez straty ogólności $a=\alpha_1x+\alpha_2y$, $e=\varepsilon_1x+\varepsilon_2y$.
+
+\subsection{Metody obliczeniowe}
+Wszystkie rachunki prowadzono dokładnie nad $\Q$ (Sage/Singular oraz sympy).
+\begin{enumerate}
+\item \textbf{Brak zgodnego funkcjonału.} Jądro macierzy $5\times6$ o wierszach
+$[p_x,p_y,1,-q_x,-q_y,-1]$ (skrypty \texttt{iter01/zad3/skrypty/brak\_funkcjonalu.py},
+\texttt{iter02/zad3/skrypty/brak\_funkcjonalu\_niezal.py}, \texttt{iter02/zad2/skrypty/kontrola.sage}).
+\item \textbf{Konstrukcje stopnia 6.} Dla multistopni $(2,3)$ i $(3,2)$: przeglądanie małych
+kierunków $(\alpha_1,\alpha_2)$, $(\varepsilon_1,\varepsilon_2)$ i rozwiązywanie liniowego układu
+\eqref{eq:warunki} nad $\Q$ (\texttt{iter01/zad2/skrypty/szukaj.sage},
+\texttt{iter02/zad3/skrypty/szukaj\_ladne.py}: wszystkie prymitywne kierunki całkowite o
+współrzędnych $|\cdot|\le3$).
+\item \textbf{Wykluczenie multistopnia $(2,2)$, metoda I} (iter01/zad1, \texttt{st4.sage};
+powtórzona z jawnym przeglądem kart w iter02/zad2, \texttt{kontrola.sage}). Przy ustalonych
+$a,e$ istnienie rozwiązania pierwszej grupy równań \eqref{eq:warunki} z $\deg f\le2$ wymaga
+$\det M_1=0$, $M_1=[p_x,p_y,1,a(p)^2\mid e(q)]$ (wiersze $i=1..5$), a drugiej -- $\det M_2=0$,
+$M_2=[q_x,q_y,1,e(q)^2\mid a(p)]$. Oba wielomiany są dwujednorodne w $(\alpha,\varepsilon)$;
+ideał nasycono względem $\alpha=0$ i $\varepsilon=0$ i zbadano wszystkie karty afiniczne
+$\mathbb P^1\times\mathbb P^1$.
+\item \textbf{Wykluczenie multistopnia $(2,2)$, metoda II} (iter02/zad1, \texttt{gb22.sage}).
+Pełny ideał wszystkich współczynników po normalizacji $f=x^2$, $g=g_2y^2$, warunki niezerowości
+przez zmienne pomocnicze ($u\det(a,b)=1$ itd.), baza Gröbnera i eliminacja do niezmiennika
+$s=\alpha_1^3g_2$. \emph{Test kontrolny}: po ustaleniu $g_2=1$ zbudowano jawne rozwiązania nad
+ciałami liczbowymi i sprawdzono symbolicznie, że dają automorfizmy stopnia 4 realizujące bijekcję
+-- co pokazuje, że metoda nie jest ,,ślepa''.
+\end{enumerate}
+Rozwiązania sprawdzał niezależny weryfikator (\texttt{narzedzia/verify.py}), który dokładnie
+sprawdza $F(p_i)=q_i$, istnienie wymiernej odwrotności wielomianowej i stopień.

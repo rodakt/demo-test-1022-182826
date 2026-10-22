@@ -18,3 +18,7 @@ Wiemy: zweryfikowano automorfizmy stopnia 6 (multistopnie (3,2) i (2,3)); udowod
 ## Iteracja 03 — plan
 
 Wiemy: weryfikator zarządcy przyjął 5 automorfizmów stopnia 6 (najczytelniejszy: praca/iter02/zad3/rozwiazanie_st6_ladne.json, multistopień (2,3)). Iteracja 02 potwierdziła ograniczenie dolne: iter02/zad2 spisał i zrecenzował pełny dowód deg F ≥ 6 (UDOWODNIONE modulo cytowane twierdzenie Jung–van der Kulk), a iter02/zad1 niezależną metodą (pełna baza Gröbnera, test kontrolny nad ciałami liczbowymi) potwierdził OBLICZENIOWO brak wymiernego rozwiązania o multistopniu (2,2), czyli jedynego kandydata na stopień 4. Fakt o braku niestałego funkcjonału afinicznego zgodnego na p_i i q_i (który wyklucza stopnie 1, 2, 3 i 5) sprawdzono niezależnie trzykrotnie. Pytanie uznajemy więc za rozstrzygnięte: najniższy stopień to 6 i jest on minimalny w całej klasie automorfizmów Q², z zastrzeżeniem zależności od cytowanego twierdzenia i faktów obliczeniowych. Nie planujemy dalszych zadań (koniec: true); pozostały czas przeznaczamy na raport.
+
+## Raport — wersja końcowa
+
+Redaktor przepisał sekcje metody, przebiegu i wniosków, dodał streszczenie i literaturę: najniższy zweryfikowany stopień 6, ograniczenie dolne 6 UDOWODNIONE modulo cytowane twierdzenie Junga–van der Kulka i dwa fakty OBLICZENIOWE. Raport kompiluje się bez błędów.

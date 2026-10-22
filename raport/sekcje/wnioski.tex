@@ -1,1 +1,56 @@
-% Sekcję uzupełnia agent-redaktor.
+\section{Wnioski i pytania otwarte}
+
+\begin{stwierdzenie}[ZWERYFIKOWANE]\label{st:gora}
+Istnieje automorfizm $F\in\Aut(\Q^2)$ stopnia $6$ z $F(p_i)=q_i$, $i=1,\dots,5$, np.
+$F=A\circ u_g\circ t_f\circ B$ z $f=\tfrac83x^2$, $g=-\tfrac5{96}y^3-\tfrac1{24}y^2$
+(plik \texttt{praca/iter02/zad3/rozwiazanie\_st6\_ladne.json}). Weryfikator przyjął
+łącznie 4 różne pliki stopnia 6 (multistopnie $(2,3)$ i $(3,2)$).
+\end{stwierdzenie}
+
+\begin{lemat}[OBLICZENIOWE, trzy niezależne skrypty]\label{lem:funkc}
+Jeśli $l,l'$ są funkcjonałami afinicznymi nad $\Q$ i $l(p_i)=l'(q_i)$ dla $i=1,\dots,5$, to
+$l=l'$ jest stałą (macierz $[p_x,p_y,1,-q_x,-q_y,-1]$ ma rząd 5).
+\end{lemat}
+
+\begin{lemat}[OBLICZENIOWE, dwie metody]\label{lem:22}
+Nie istnieje $F=A\circ u_g\circ t_f\circ L$ z $A,L\in\mathrm{Aff}(\Q)$, $\deg f=\deg g=2$,
+realizujący bijekcję. Wielomian eliminacyjny dla $s=\alpha_1^3g_2$ rozkłada się na czynnik
+kwadratowy (ciało $\Q(\sqrt{94})$) i kubiczny, bez pierwiastków wymiernych. Nad odpowiednimi
+ciałami liczbowymi takie automorfizmy stopnia 4 istnieją.
+\end{lemat}
+
+\begin{twierdzenie}[UDOWODNIONE modulo tw.~\ref{tw:jvdk} i lematy \ref{lem:funkc}, \ref{lem:22}]\label{tw:dol}
+Każdy automorfizm wielomianowy $F$ płaszczyzny $\Q^2$ z $F(p_i)=q_i$ ma $\deg F\ge6$.
+W konsekwencji, wraz ze stwierdzeniem~\ref{st:gora}, \textbf{najmniejszy stopień takiego
+automorfizmu wynosi 6}.
+\end{twierdzenie}
+\begin{proof}
+Słowa długości $k=0$: $F$ afiniczne, więc $l=x$, $l'=$ pierwsza składowa $F^{-1}$ są niestałe
+i zgodne -- sprzeczność z lematem~\ref{lem:funkc}. Dla $k=1$, $F=A\circ T\circ L$ z $T\in J$
+zachowującym pierwszą współrzędną z dokładnością do $\alpha\,\mathrm{pr}_1+c$, funkcjonały
+$l=\alpha\,\mathrm{pr}_1\circ L+c$, $l'=\mathrm{pr}_1\circ A^{-1}$ są niestałe i zgodne --
+sprzeczność. Zatem $k\ge2$ i z lematu~\ref{lem:postac} $\deg F$ jest iloczynem co najmniej dwóch
+liczb $\ge2$. Stąd $\deg F\notin\{1,2,3,5\}$, a $\deg F=4$ wymaga $k=2$, $\deg f_1=\deg f_2=2$,
+czyli $F=A\circ u_g\circ t_f\circ L$ z $\deg f=\deg g=2$, co wyklucza lemat~\ref{lem:22}.
+\end{proof}
+
+\begin{uwaga}
+Status twierdzenia~\ref{tw:dol} jest mieszany: część rozumowania jest udowodniona, ale zależy
+od cytowanego (nieweryfikowanego tu) twierdzenia Junga--van der Kulka oraz od dwóch rachunków
+komputerowych w Sage/Singularze i sympy. Wyniki te potwierdzono niezależnymi skryptami, nie
+zostały jednak sformalizowane. Lemat~\ref{lem:22} pokazuje też, że ograniczenie dolne jest
+,,arytmetyczne'': nad ciałem $\Q(\sqrt{94})$ stopień 4 byłby osiągalny.
+\end{uwaga}
+
+\subsection*{Pytania otwarte}
+\begin{enumerate}
+\item Czy istnieje bezkomputerowy (ręczny) dowód lematu~\ref{lem:22}, np. przez jawny
+opis rozwiązań nad $\overline{\Q}$?
+\item Jak opisać zbiór wszystkich automorfizmów stopnia 6 realizujących bijekcję? Przegląd
+kierunków $|\cdot|\le3$ dał tylko 6 par $(a,e)$ (wynik obliczeniowy); czy przy kierunkach
+wymiernych rodzina jest skończona z dokładnością do trywialnej swobody?
+\item Czy dla ogólnych (,,generycznych'') danych $m=5$ najmniejszy stopień nad $\Q$ wynosi
+zawsze 6, a nad $\overline{\Q}$ -- 4? (HIPOTEZA, niebadana.)
+\item Jak zachowuje się najmniejszy stopień dla większych $m$ w porównaniu z ograniczeniem
+$(m-1)^2$?
+\end{enumerate}
