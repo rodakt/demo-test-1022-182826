@@ -30,3 +30,9 @@ Zaakceptowane: 4, odrzucone: 0, najlepszy stopień: 6
 OK  praca/iter02/zad3/rozwiazanie_st6_ladne.json stopień=6 
 Zaakceptowane: 5, odrzucone: 0, najlepszy stopień: 6
 [18:37:02] najlepszy zweryfikowany stopień: 6
+[18:37:15] == iteracja 03: planowanie
+[18:37:53] agent iter03_planista zakończony (kod 0, koszt 0.2972252 USD)
+[18:37:53] Planista uznał pytanie za rozstrzygnięte
+[18:37:53] == raport końcowy
+Zaakceptowane: 5, odrzucone: 0, najlepszy stopień: 6
+[18:37:53] najlepszy zweryfikowany stopień: 6
